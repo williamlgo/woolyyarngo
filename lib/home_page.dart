@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:woolyyarngo/color_picker.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -93,6 +94,17 @@ class _HomePageState extends State<HomePage>{
                 ],
               ),
 
+            ),
+
+            //Random Color Picker
+            ListTile(
+              leading: const Icon(Icons.question_mark_outlined),
+              title: const Text('Random Color Picker'),
+              onTap: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const Page1()));
+                //Navigator.pop(context);
+              },
             ),
 
             // //NOTES
